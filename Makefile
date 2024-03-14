@@ -4,7 +4,8 @@ pre-commit:
 	pre-commit run --all-files
 install:
 	poetry install
-	pre-commit install # it fails if shell is not reset. TODO: fix it
+pre-commits-init:
+	pre-commit install
 dvc-init:
 	dvc init
 	mkdir -p ${DVC_REMOTE_PATH}/${PWD##*/}
