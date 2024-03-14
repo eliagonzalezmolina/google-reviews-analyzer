@@ -11,7 +11,7 @@ go to [this repo](https://github.com/eliagonzalezmolina/google-maps-reviews-scra
 
 ```bash
 make install
-make pre-commits-init
+make pre-commit-init
 make dvc-init
 ```
 

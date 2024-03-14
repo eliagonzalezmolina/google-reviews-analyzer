@@ -4,7 +4,7 @@ pre-commit:
 	pre-commit run --all-files
 install:
 	poetry install
-pre-commits-init:
+pre-commit-init:
 	pre-commit install
 dvc-init:
 	dvc init
