@@ -17,14 +17,21 @@ make dvc-init
 
 ## Usage 🚀
 ### Open-ai place summary
-Generate a summary with pros&cons of a place given its reviews.
+Generate a summary with pros&cons of a place given its reviews. It uses OpenAI API,
+so it has some costs 🙃
 
-1- Fill `params.yaml` (section `openai_place_summary`)
+1- Put your csv scrapped from
+[this repo](https://github.com/eliagonzalezmolina/google-maps-reviews-scraper)
+in the `data` folder
 
-2- Run `google_reviews_analyzer/openai_place_summary/main.py`
+2- Fill `params.yaml` (section `openai_place_summary`)
+
+3- `OPEN_AI_API_KEY` is mandatory in `.env`
+
+4- Run `google_reviews_analyzer/openai_place_summary/main.py`
 
 ## Development 🤓
-- Before starting, do `dvc push` to get most recent data
+- Before starting, do `dvc pull` to get most recent data
 - Make sure that you `dvc add` and `dvc push` your data files
 - Before commiting code, it's recommendable to run `make pre-commit` to ensure code
 style (however, it is done automatically when commiting code)
