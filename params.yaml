@@ -1,0 +1,10 @@
+openai_place_summary:
+  engine:
+    model: gpt-3.5-turbo
+    temperature: 0.5
+    max_tokens: 100
+    model_max_tokens: 16385
+  data:
+    input_path: sample.csv
+    output_path: openai_place_summary.txt
+    place_name: a Restaurant

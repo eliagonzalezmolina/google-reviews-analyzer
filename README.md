@@ -15,6 +15,14 @@ make pre-commit-init
 make dvc-init
 ```
 
+## Usage 🚀
+### Open-ai place summary
+Generate a summary with pros&cons of a place given its reviews.
+
+1- Fill `params.yaml` (section `openai_place_summary`)
+
+2- Run `google_reviews_analyzer/openai_place_summary/main.py`
+
 ## Development 🤓
 - Before starting, do `dvc push` to get most recent data
 - Make sure that you `dvc add` and `dvc push` your data files
